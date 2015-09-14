@@ -1,6 +1,10 @@
 # twitter-soft-unfollow
 A chrome extension that lets you unfollow in a "soft" manner, without really unfollowing
 
+## Chromestore
+
+This project is in production in the Google Chromestore: https://chrome.google.com/webstore/detail/twitter-soft-unfollow/fneefkpfajhkoimlabgcbhpbpjppceke
+
 ## How it works
 
 - Unfollowed users are stored in chrome storage API
