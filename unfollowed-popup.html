@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html data-ng-app="packingApp">
+<head>
+    <title>Manage unfollowed</title>
+       
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-theme.min.css" />
+    <script src="jquery.min.js"></script>
+    <script src="unfollowed-popup.js"></script>
+    
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+    </style>
+    
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container" style="padding: 20px">
+        <h1>Twitter Soft Unfollow</h1>
+        <p>People in this list will be unfollowed visually</p>
+
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>username</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="unfollowed-users">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" id="username" class="form-control input-sm" placeholder="add new" /></td>
+                    <td style="text-align: center"><a href="" id="add">add...</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
