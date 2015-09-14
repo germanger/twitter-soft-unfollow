@@ -1,6 +1,10 @@
 # twitter-soft-unfollow
 A chrome extension that lets you unfollow in a "soft" manner, without really unfollowing
 
+## Motivation
+
+You want to stop seeing tweets from someone, but you don't want to unfollow him because he might get offended.
+
 ## Chromestore
 
 This project is in production in the Google Chromestore: https://chrome.google.com/webstore/detail/twitter-soft-unfollow/fneefkpfajhkoimlabgcbhpbpjppceke
