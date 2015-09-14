@@ -21,7 +21,7 @@ function refreshTweets() {
         var unfollowed = [];
         
         // Key exists
-        if (!chrome.runtime.lastError) {
+        if (data.unfollowed != undefined) {
             unfollowed = data.unfollowed;
         }
         
