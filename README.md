@@ -9,10 +9,12 @@ You want to stop seeing tweets from someone, but you don't want to unfollow him 
 
 This project is in production in the Google Chromestore: https://chrome.google.com/webstore/detail/twitter-soft-unfollow/fneefkpfajhkoimlabgcbhpbpjppceke
 
-## How it works
+## Features
 
-- Unfollowed users are stored in chrome storage API
+- Unfollowed users are stored using Chrome Storage API
 - It relies on some DOM names (such as `.new-tweets-bar`, `.tweet[data-screen-name='foo']` and `.tweet-text`)
+- It works when you infinite scroll (bottom) too, using `chrome.webRequest.onCompleted`
+- It works with when new tweets appear (top) too, attaching a click event to `.new-tweets-bar`
 
 ## Screenshot
 

@@ -13,3 +13,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         });
     }
 });
+
+// Twitter has infinite scrolling, this intercepts those requests
+chrome.webRequest.onCompleted.addListener(function(data) {
+    console.log("detected infinite scrolling");
+    
+    // Tell that tab to refreshTweets
+    chrome.tabs.sendMessage(data.tabId, {action: "refreshTweets"});
+},
+{
+    urls: ["https://twitter.com/i/timeline*"]
+}); 
